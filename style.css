@@ -1,7 +1,19 @@
 body {
     width: 120%;
+    color: #222;
+    font-family: sans-serif;
 }
 
 p {
     width: 120%;
+    color: #ccc;
+}
+
+body > div > p {
+    background-color: #000;
+    padding: 20px;
+}
+
+h2 {
+    color: #fff;
 }
