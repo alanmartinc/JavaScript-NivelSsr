@@ -17,3 +17,99 @@ body > div > p {
 h2 {
     color: #fff;
 }
+
+.contenedor-1 {
+    padding: 30px;
+    margin-top: 20px;
+    background: red;
+}
+
+.contenedor-2 {
+    padding: 30px;
+    margin-top: 20px;
+    background: blue;
+}
+
+.contenedor-3 {
+    padding: 30px;
+    margin-top: 20px;
+    background: red;
+}
+
+.contenedor-4 {
+    padding: 30px;
+    margin-top: 20px;
+    background: blue;
+}
+
+.contenedor-5 {
+    padding: 30px;
+    margin-top: 20px;
+    background: red;
+}
+
+.contenedor-6 {
+    padding: 30px;
+    margin-top: 20px;
+    background: blue;
+}
+
+.contenedor-7 {
+    padding: 30px;
+    margin-top: 20px;
+    background: red;
+}
+
+.contenedor-8 {
+    padding: 30px;
+    margin-top: 20px;
+    background: blue;
+}
+
+.contenedor-9 {
+    padding: 30px;
+    margin-top: 20px;
+    background: red;
+}
+
+.contenedor-10 {
+    padding: 30px;
+    margin-top: 20px;
+    background: blue;
+}
+
+.contenedor-11 {
+    padding: 30px;
+    margin-top: 20px;
+    background: red;
+}
+
+.contenedor-12 {
+    padding: 30px;
+    margin-top: 20px;
+    background: blue;
+}
+
+.input-prueba {
+    border: 1px solid #000;
+    border-radius: 5px;
+    padding: 6px;
+    color: #444;
+    outline: none !important;
+}
+
+.input-select {
+    border: 1px solid #000;
+    border-radius: 5px;
+    padding: 6px;
+    color: #444;
+    outline: none !important;
+}
+
+.seleccionado {
+    color: #777;
+}
+
+.seleccionado b {
+    color: #0A0;
+}
