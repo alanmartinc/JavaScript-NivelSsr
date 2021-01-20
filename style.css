@@ -1,7 +1,8 @@
-body {
+/* body {
     width: 120%;
     color: #222;
     font-family: sans-serif;
+    box-sizing: border-box;
 }
 
 p {
@@ -112,4 +113,95 @@ h2 {
 
 .seleccionado b {
     color: #0A0;
+} */
+
+body {
+    font-family: sans-serif;
+    width: 50%;
+}
+
+input {
+    width: 100%;
+    display: block;
+    padding: 9px;
+    margin: 12px auto;
+    box-sizing: border-box;
+    border: none;
+    border-top: 2px solid #48e;
+    background: transparent;
+    outline: none !important;
+    transition: background 0.3s;
+    color: #fff;
+}
+
+input::placeholder{
+    color: #48e;
+    transition: color 0.3s;
+}
+
+input:hover {
+    background: #26a;
+}
+
+input:hover::placeholder {
+    color: #fff;
+}
+
+input[type="submit"]{
+    width: 50%;
+    padding: 12px;
+    background: #26a;
+    color: #fff;
+    margin: 24px 0;
+    margin-bottom: 12px;
+}
+
+input[type="submit"]:hover {
+    background: #048;
+}
+
+form {
+    width: 86%;
+    margin: auto;
+    background: #013;
+    padding: 30px;
+}
+
+h2 {
+    color: #fff;
+    margin-bottom: 36px;
+}
+
+.green {
+    color: #9c9;
+}
+
+.red {
+    color: #c99;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-rows: 50px;
+    grid-template-columns: repeat(4,minmax(min-content,max-content));
+    grid-auto-rows: 50px;
+}
+
+.grid-container .grid-item {
+    padding: 10px;
+    border: 1px solid #26a;
+    margin: 5px;
+}
+
+.boton-confirmar {
+    padding: 9px 40px;
+    background: #48e;
+    color: #fff;
+    border: none;
+    margin: 6px;
+    border: 3px solid #ccc;
+}
+
+.boton-confirmar:hover {
+    background: rgb(55, 130, 243);
 }
