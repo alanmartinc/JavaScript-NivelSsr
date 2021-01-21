@@ -206,7 +206,7 @@ h2 {
     background: rgb(55, 130, 243);
 } */
 
-body {
+/* body {
     color: #333;
     font-family: sans-serif;
 }
@@ -283,4 +283,35 @@ input[type="button"] {
         opacity: 1;
         display: flex;
     }
+} */
+
+body {
+    color: #222;
+    font-family: sans-serif;
+}
+
+.materias {
+    width: 90%;
+    background: #ccc;
+    padding: 2px;
+    font-size: 20px;
+}
+
+.materia {
+    background: #efefef;
+    display: flex;
+}
+
+.materia div {
+    padding: 20px;
+}
+
+.materia .nota {
+    flex-basis: 20px;
+    background: #dddddd;
+    font-weight: 700;
+}
+
+.materia .nombre {
+    flex-grow: 1;
 }
