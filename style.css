@@ -285,7 +285,7 @@ input[type="button"] {
     }
 } */
 
-body {
+/* body {
     color: #222;
     font-family: sans-serif;
 }
@@ -314,4 +314,4 @@ body {
 
 .materia .nombre {
     flex-grow: 1;
-}
+} */
