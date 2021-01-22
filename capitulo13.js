@@ -63,3 +63,40 @@ peticion2.send();
 
 console.log(peticion1);
 console.log(peticion2);
+
+// XMLHTTPRequest
+let peticion3;
+if(window.XMLHttpRequest) peticion3 = new XMLHttpRequest();
+else peticion3 = new ActiveXObject("Microsoft.XMLHTTP");
+
+peticion3.addEventListener("load",()=>{
+    let respuesta;
+    if(peticion3.status == 200) respuesta = peticion3.response;
+    else respuesta = "Lo siento, no se ha encontrado el recurso";
+    console.log(JSON.parse(respuesta).Nombre);
+});
+
+peticion3.open("GET","informacion.txt");
+
+peticion3.send();
+
+// Enviar peticiones POST
+let peticion4;
+if(window.XMLHttpRequest) peticion4 = new XMLHttpRequest();
+else peticion4 = new ActiveXObject("Microsoft.XMLHTTP");
+
+peticion4.addEventListener("load",()=>{
+    let respuesta;
+    if(peticion4.status == 200 || peticion4.status == 201) respuesta = peticion4.response;
+    else respuesta = "Lo siento, no se ha encontrado el recurso";
+    console.log(JSON.parse(respuesta));
+});
+
+peticion4.open("POST","https://reqres.in/api/users");
+
+peticion4.setRequestHeader("Content-type","application/json;charset=UTF8");
+
+peticion4.send(JSON.stringify({
+    "nombre": "morfeo",
+    "trabajo": "líder"
+}));
