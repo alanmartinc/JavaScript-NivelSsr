@@ -100,3 +100,40 @@ peticion4.send(JSON.stringify({
     "nombre": "morfeo",
     "trabajo": "líder"
 }));
+
+/* 
+Fetch: Basado en promesas
+*/
+
+// Promesa
+fetch("https://reqres.in/api/unknown/2")
+.then(res=>res.text())
+.then(res=>console.log(res));
+
+fetch("https://reqres.in/api/users",{
+    method: "POST",
+    body: `{"nombre": "Alan","apellido": "Cabot"}`,
+    headers: {"Content-type": "application/json"}
+})
+.then(res=>res.json())
+.then(res=>console.log(res));
+
+const documento = document.querySelector(".documento");
+fetch("informacion.txt")
+.then(res=>res.blob())
+.then(res=>documento.txt = URL.createObjectURL(res));
+
+// Axios
+axios.post("https://reqres.in/api/users",{
+    "nombre":"Alan"
+})
+.then(res=>console.log(res))
+
+// Fetch y Axios con Async & Await
+const getName = async ()=>{
+    let peticion = await fetch("informacion.txt");
+    let resultado = await peticion.json();
+    console.log(resultado);
+}
+
+document.getElementById('nombre').addEventListener("click",getName);
